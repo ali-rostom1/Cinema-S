@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Layout</title>
+    <style>/* Global styles */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #32002d; /* Dark purple background */
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Footer layout */
+        .footer {
+            display: flex;
+            justify-content: space-around; /* Space out the columns */
+            padding: 20px;
+            border-top: 1px solid #fff;
+        }
+        
+        .footer-section {
+            flex: 1;
+            text-align: center;
+        }
+        
+        .footer-section h3 {
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            position: relative;
+        }
+        
+        .footer-section h3::before {
+            content: "◦";
+            margin-right: 8px;
+            font-size: 0.9em;
+            color: white;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+        
+        /* Vertical divider lines */
+        .footer-section + .footer-section {
+            border-left: 1px solid white;
+            padding-left: 20px;
+        }
+        
+        /* Social Media Icons */
+        i {
+            margin-right: 10px;
+        }
+        
+         </style>
+</head>
+<body>
+    <footer class="footer">
+        <div class="footer-section">
+            <h3>◦ social media links</h3>
+            <ul>
+                <li><i class="fa fa-github"></i> Youcode SAFI @2024</li>
+                <li><i class="fa fa-linkedin"></i> CodeShogun</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>◦ sponsors</h3>
+            <ul>
+                <li>Cisco - Amazon - Google - Azure - LinkedIn</li>
+                <li>IBM - Facebook - Tesla - Apple - Microsoft</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>◦ company</h3>
+            <ul>
+                <li>Register</li>
+                <li>Login</li>
+                <li>Wishlist</li>
+                <li>Our Products</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
