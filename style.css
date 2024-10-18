@@ -79,8 +79,8 @@ body {
 .intro_section{
     width: 98%;
     height: 150%;
-    padding-left: 2%;
-    float: right;
+    position: relative;
+    left: 2%;
     background: linear-gradient(to left top,#FFF3B0 7%,#F4CAC0 21%,#CA26FF 100%);
     border-radius: 20px 20px 300px 20px;
 }
@@ -135,7 +135,6 @@ body {
 }
 .trending_movies {
     width: 100%;
-    clear:both;
 }
 .hr-text {
     width: 100%;
@@ -181,6 +180,7 @@ body {
     height: 12%;
     background-color: #330031;
     border:none;
+    padding: 10px;
     border-radius: 35px;
     margin-top: 15px;
     color: white;
