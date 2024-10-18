@@ -142,18 +142,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    top: 10px;
 }
-.hr-text span{
-    font-size: 16px;
-
+.hr-text hr{
+    width: 100%;
 }
-.hr-text:after {
-    content: '';
-    flex: 1;
-    border-bottom: 1px solid #000;
-    margin-left: 10px;
+.text{
+    position: absolute;
+    background: transparent;
+    right: 85%;
+    background-color: whitesmoke;
+    padding: 0 10px;
 }
-
 .movies_container1, .movies_container2 {
     margin-bottom: 30px;
 }
@@ -238,6 +239,19 @@ body {
     gap: 10px;
     margin: 30px 0;
 }
+
+.movies-row2 img{
+}
+.movies-row2 a{
+    transition: transform 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+    border-radius: 8px;
+}
+.movies-row2 a:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 10px 8px #000;
+}
+
+
 .services_section{
     width: 100%;
     height: 550px;
@@ -281,6 +295,7 @@ body {
     color: white;
     background-color: #330031;
     border-radius:0 0 20px 20px ;
+    text-decoration: none;
 }
 .block_content{
     background-color: white;
@@ -514,7 +529,8 @@ i {
     padding: 100px;
 }
 .contact_section span{
-    font-size: 60px;
+    width: 40%;
+    font-size: 48px;
     color: white;
     position: relative;
     right: 5%;
