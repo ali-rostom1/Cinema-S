@@ -500,3 +500,52 @@ i {
     transform: translateY(-20px);
     box-shadow: 0 4px 50px gray;
 }
+
+
+/* contact.html */
+.contact_section{
+    width: 100%;
+    height: auto;
+    background-color: #FF00F7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 100px;
+}
+.contact_section span{
+    font-size: 60px;
+    color: white;
+    position: relative;
+    right: 5%;
+}
+.contact_form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 40px;
+    height: auto;
+    gap:20px;
+    background-color: black;
+}
+.input_name,.input_email,.input_phone{
+    width: 60%;
+    height: 40px;
+    border: none;
+    background-color: #FF99FC;
+    padding: 0 10px;
+    font-size: 25px;
+}
+.input_description{
+    width: 100%;
+    height: 120px;
+    background-color: #FF99FC;
+    padding: 10px 10px;
+    font-size: 25px;
+}
+.contact_button{
+    width: 25%;
+    height: 50px;
+    align-self: flex-end;
+    font-size: 28px;
+}
